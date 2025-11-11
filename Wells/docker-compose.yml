@@ -1,0 +1,18 @@
+﻿services:
+  postgres:
+    image: postgres:latest
+    container_name: wells
+    environment:
+      POSTGRES_DB: wells
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+    ports:
+      - "5435:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./sql_scripts:/docker-entrypoint-initdb.d
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+

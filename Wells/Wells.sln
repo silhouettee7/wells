@@ -2,6 +2,14 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wells", "Wells\Wells.csproj", "{CB48617B-BC23-468E-8CB6-50C37FAF01A1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8464D682-A773-481E-8262-4FDD53434078}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		sql_scripts\query.sql = sql_scripts\query.sql
+		sql_scripts\01_init.sql = sql_scripts\01_init.sql
+		sql_scripts\02_init.sql = sql_scripts\02_init.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
